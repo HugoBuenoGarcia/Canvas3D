@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* Fondo de carga */
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#ui-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2; /* Por encima del 3D */
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 300px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #00ffcc; /* Acento futurista */
+}
+
+p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+button {
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #00e6b8;
+}
