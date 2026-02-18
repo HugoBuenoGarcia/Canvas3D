@@ -41,7 +41,7 @@ scene.add(mesh);
 // --- 6. Cargar Modelo 3D y Animaciones ---
 let mixer;
 const loader = new GLTFLoader();
-loader.load('assets/Strafe.glb', function (gltf) {
+loader.load('assets/Strafe.fbx', function (gltf) {
     const model = gltf.scene;
     
     // Ajustar sombras en el modelo
@@ -104,4 +104,5 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
 }
